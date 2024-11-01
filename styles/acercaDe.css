@@ -1,0 +1,42 @@
+/***************Acerca de Gamer Master Kanives***************/
+.master {
+    background-image: url(../image/backgrounds/Skyrim-Fragua-.png);
+}
+.master > .gamer > h1 {
+    font-size: 4em;
+    text-align: center;
+    background-color: #FFE7C1;
+    border-radius: 5rem;
+}
+.master > .informacion > p {
+    font-family: var(--second-font);
+    font-size:1.5em;
+    color: var(--first-color);
+    text-align: center;
+}
+#knives {
+    margin-left: 9rem;
+    margin-right: 55rem;
+    position: relative;
+    top: 6rem;
+}
+#knives > figure >  img {
+    height: 18rem;
+    width: 18rem; 
+    border-radius: 10rem;
+    object-fit: cover;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #F9A93A ;
+    opacity: 0.7;
+    transition: 8s;
+}
+#knives > figure > img:hover {
+    box-shadow: 10rem 10rem 10rem 10rem #F0BCBD
+}
+#knives > figure > figcaption {
+    color: black;
+    font-size: 4em;
+}
+
+#acercade {
+    background-image: url(../image/backgrounds/Skyrim-Fragua-.png); 
+}

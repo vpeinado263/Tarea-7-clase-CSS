@@ -1,0 +1,26 @@
+/***************Cuchillo de acero al Carbono***************/
+.cuchillo {
+    opacity: 0.8;
+    background-color: #434346;
+    background-image: linear-gradient(to bottom, #1f1e2b, #714a17);
+}
+.cuchillo > .aceroalcarbono > div > h1 {
+    font-size: 4em;
+    color: var(--first-color); 
+}
+.cuchillo > .aceroalcarbono > div > p {
+    font-size: 1.3rem;
+    font-family: var(--second-font);
+    color: var(--first-color);
+    text-align: center;
+}
+.cuchillo > .manejoadecuado > article > div > h2 {
+    font-size: 2em;
+    color: black; 
+}
+.cuchillo > .manejoadecuado > article > div > p {
+    font-family: var(--second-font);
+    font-size: 1.3rem;
+    color: var(--first-color);
+    text-align: center;
+}
