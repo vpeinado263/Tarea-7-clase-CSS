@@ -83,13 +83,6 @@ p {
     background-size: cover;
     background-position: 80%;
 }
-#micuenta {
-    background-image: url(../CSS/Multimedia-CSS/Imagenes/Fondo-Cuenta-Gamer-Master-Kanives.jpg);
-    height: 100vh;
-    width: auto;
-    background-size: cover;
-    background-position: 80%;
-}
 #tipos {
     background-image: url(../CSS/Multimedia-CSS/Imagenes/Melena-Gris-tipos-de-modelo.png);
     height: 100vh;
@@ -274,79 +267,6 @@ figcaption ul li {
     }
 }
 
-
-/*****Tarea tarjeta del Clima*****/
-main > #main > .etiqueta-contenedora > .cloudy {
-   display: flex;
-   justify-content: space-between;
-   align-items: end;
-   background-color: #FAF9FA;
-   height: 18rem;
-   width: 35rem;
-   border-radius: 1rem;
-   position: relative;
-   bottom: 7rem;
-   box-shadow: 1rem 1rem 1rem rgb(41, 39, 39);
-}
-main > #main > .etiqueta-contenedora > .cloudy  p {
-    color: #F5F2F2;
-}
-main > #main > .etiqueta-contenedora  > .cloudy > .grados {
-    background-color: #000000;
-    height: 7rem;
-    width: 7rem;
-    border-radius: 0rem 0rem 0rem 1rem;
-}
-main > #main > .etiqueta-contenedora  > .cloudy > .grados  p {
-    font-family: "poirent";
-    font-size: 4rem ;
-    display: flex;
-    position: relative;
-    left: 2rem;
-    top: 1.1rem;
-}
-main > #main > .etiqueta-contenedora > .cloudy > .tiempo-en {
-    background-color: #070706;
-    height: 7rem;
-    width: 19rem;
-    display: flex;
-    justify-items: center ;
-    flex-direction: column;
-    align-items: center;
-} 
-main > #main > .etiqueta-contenedora > .cloudy > .tiempo-en > img {
-    height: 10rem;
-    width: 10rem;
-    position: relative;
-    bottom: 9rem;
-}
-main > #main > .etiqueta-contenedora > .cloudy > .tiempo-en > span {
-    color: #F5F2F2;
-    font-size: 2.5rem;
-    font-family: "Poirent";
-    text-transform: uppercase;
-    position: relative;
-    bottom: 8.6rem;
-}
-main > #main > .etiqueta-contenedora > .cloudy > .tiempo-en p {
-    font-family: "Poirent";
-    position: relative;
-    bottom: 8.8rem;
-}
-main > #main > .etiqueta-contenedora > .cloudy > .fecha {
-    background-color: #6EB6B2;
-    height: 7rem;
-    width: 9rem;
-    border-radius: 0rem 0rem 1rem 0rem;
-}
-main > #main > .etiqueta-contenedora > .cloudy  > .fecha > p {
-    font-size: 2rem;
-    text-align: center;
-    position: relative;
-    top: 2rem;
-    text-transform: capitalize;
-    font-family: "Poirent";
-}
 /*****Responsive****/ 
 @media screen and (max-width: 480px) {
     main > #main > .etiqueta-contenedora {
