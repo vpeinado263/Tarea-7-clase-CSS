@@ -11,6 +11,7 @@
     font-family: "poirent";
     src: url(../Fonts/PoiretOne-Regular.ttf);
 }
+
 /*********Propiedades Personalizadas*******/
 :root {
     --first-color: rgb(5, 5, 5);
@@ -20,6 +21,7 @@
     --first-font: "Skyrim";
     --second-font:"Skyrim1";
 }
+
 /*****Reset*****/
 * {
     box-sizing: border-box;
@@ -53,6 +55,7 @@ span {
 p {
     color: var(--winte-color);
 }
+
 /*****Utilidades*****/
 .card-button {
     height: 1rem;
@@ -71,6 +74,7 @@ p {
 .card-button:hover {
     background-color: var(--first-color);
 }
+
 /*****Imagenes de Fondo*****/
 #fondo-principal {
     background-image: url(../CSS/Multimedia-CSS/Imagenes/Skyrim-Fondo-Home-.jpg);
@@ -127,6 +131,7 @@ p {
     width: auto;
     background-size: cover;
 }
+
 /***************Barra de Navegacion***************/
 .img {
     height: 8rem;
@@ -156,6 +161,7 @@ p {
     column-gap: 1rem;
     font-family: var(--second-font);
 }
+
 /*****Home*****/
 .titulo {
     display: flex;
@@ -164,32 +170,7 @@ p {
     top: 19rem;
     right: 15rem;;
 }
-/*****Responsive*****/
-@media screen and (max-width: 786px) {
-    .cuerpo-inicio > header > .nav-container > .navigation > .menu > li  > a {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .nav-container > a > h2 {
-        display: none;
-    }
-}
-@media screen and (max-width: 480px) {
-    .cuerpo-inicio > header > .nav-container > .navigation > .menu > li {
-        font-size: 0.5em;
-        position: relative;
-        right: 5rem;
-        color: var(--winte-color);
-    }
-    .cuerpo-inicio > header > .nav-container > .logo {
-        position: relative;
-        top: 10rem;
-    }
-    .cuerpo-inicio > header > .nav-container > .logo > img {
-        position: relative;
-        top: 5rem;
-    }
-}
+
 /*****************Productos destacados******************/
 .principal {
     height: 100vh;
@@ -237,17 +218,34 @@ section {
 figcaption ul li {
    margin-bottom: 3px; 
 }
-/*****Audio dovahkiin*****/ 
-.audio {
-    width: 100%;
-    background-color: #000000;
-    position: relative;
+
+/*****Responsive*****/
+@media screen and (max-width: 786px) {
+    .cuerpo-inicio > header > .nav-container > .navigation > .menu > li  > a {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav-container > a > h2 {
+        display: none;
+    }
 }
-.audio > audio {
-    height: 1rem;
-    position: relative;
-    bottom: 10rem;
+@media screen and (max-width: 480px) {
+    .cuerpo-inicio > header > .nav-container > .navigation > .menu > li {
+        font-size: 0.5em;
+        position: relative;
+        right: 5rem;
+        color: var(--winte-color);
+    }
+    .cuerpo-inicio > header > .nav-container > .logo {
+        position: relative;
+        top: 10rem;
+    }
+    .cuerpo-inicio > header > .nav-container > .logo > img {
+        position: relative;
+        top: 5rem;
+    }
 }
+
 /*****Responsive*****/
 @media screen and (max-width: 786px) {
     .principal > .tarjetas {
@@ -275,26 +273,8 @@ figcaption ul li {
         width: 12rem;
     }
 }
-/***************Mi Cuenta Gamer Master Knives***************/
-#main {
-    height: 100vh;
-    width: 100%;
-    background-color: #AE4C58;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#main > .registrate {
-    display: grid;
-    grid-template-rows: repeat(2 ,1fr) ;
-    position: relative;
-    bottom: 30rem;
-    font-size: 1em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-#main > .registrate > .formulario > .form  a {
-   color: blue;
-}
+
+
 /*****Tarea tarjeta del Clima*****/
 main > #main > .etiqueta-contenedora > .cloudy {
    display: flex;
