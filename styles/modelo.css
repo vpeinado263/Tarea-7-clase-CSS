@@ -1,0 +1,31 @@
+/**********************Tipos de Modelos*********************/
+.artesanal {
+    padding: 20px;
+}
+.tipos {
+    text-align: center;
+    font-size: 4em;
+}
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px; 
+}
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; 
+    transition: transform 0.3s; 
+}
+.card:hover {
+    transform: scale(1.05); 
+}
+.card-image {
+    width: 100%;
+    height: auto; 
+}
+.card-details {
+    padding: 15px;
+}
+

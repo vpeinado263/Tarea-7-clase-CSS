@@ -52,15 +52,14 @@ p {
 
 /*************Utilidades Button****************/
 .card-button {
-    height: 1rem;
-    width: 11rem;
+    width: 100%;
     padding: 1rem;
     font-family: var(--first-font);
+    cursor: pointer; 
     line-height: 0;
-    transition: 0.5s;
-    display: inline-block;
+    transition: background-color 0.3s, color 0.3s; 
+    font-weight: bold; 
     border-radius: 1rem;
-    text-align: center;
     text-transform: uppercase;    
 }
 .card-button:hover {
@@ -101,22 +100,17 @@ p {
 
 
 /*****************Productos destacados******************/
-
 .container {
     height: auto; 
     width: 100%;
     background-image: linear-gradient(to bottom, #919ba2dc, #000000);
     padding: 20px; 
 }
-
-
 .tarjetas {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px; 
 }
-
-
 .card {
     border: 2px solid #444; 
     border-radius: 10px;
@@ -125,59 +119,31 @@ p {
     transition: transform 0.3s, box-shadow 0.3s; 
     overflow: hidden;
 }
-
 .card:hover {
     transform: translateY(-5px); 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 1); 
 }
-
-
 .card-image {
     height: 150px; 
     width: 100%; 
     object-fit: cover; 
     border-bottom: 2px solid #F5B241; 
 }
-
-
 .card-data {
     list-style: none; 
-    padding: 10px; 
-    
+    padding: 10px;  
 }
-
-
 .card-data-titles {
     color: #F5B241; 
     font-weight: bold; 
 }
-
 .card-data-alias {
     border: white;
 }
 
-.card-button {
-    background-color: #F5B241; 
-    color: #000; 
-    border: none; 
-    border-radius: 5px; 
-    padding: 10px; 
-    cursor: pointer; 
-    transition: background-color 0.3s, color 0.3s; 
-    font-weight: bold; 
-    margin-top: 10px; 
-    width: 100%;
-}
 
 
-.card-button:hover {
-    background-color: #fff; 
-    color: #F5B241; 
-}
-
-
-
-/*****Responsive*****/
+/***********************Responsive**********************/
 @media screen and (max-width: 786px) {
     .cuerpo-inicio > header > .nav-container > .navigation > .menu > li  > a {
         display: flex;
@@ -204,7 +170,7 @@ p {
     }
 }
 
-/*****Responsive*****/
+/*********************Responsive**************************/
 @media screen and (max-width: 786px) {
     .principal > .tarjetas {
         grid-template-columns: repeat(2, 1fr);
@@ -232,7 +198,7 @@ p {
     }
 }
 
-/*****Responsive****/ 
+/************************Responsive**************/ 
 @media screen and (max-width: 480px) {
     main > #main > .etiqueta-contenedora {
         display: flex;
@@ -319,113 +285,7 @@ p {
          font-family: "Poirent";
      }
 }
-/**********************Tipos de Modelos*********************/
-.tipos > h1 {
-    font-size: 4em;
-    opacity: 0.5;
-    text-align: center;
-    text-shadow:10rem 2rem 2rem  black ;
-}
-.artesanal > .modelos > div > table > tbody > tr > td > span {
-    font-family: var(--second-font);
-    font-size: 1.5em;
-}
-.artesanal > .modelos > div > table > tbody > tr > td > figure > #Kukri {
-    height: 5rem;
-    width: 9rem;;
-    border: 0.3rem solid rgb(131, 124, 124);
-    border-radius: 1rem;
-    object-fit: cover;
-    transition: 3s;   
-}
-.artesanal > .modelos > div > table > tbody > tr > td > figure > #Kukri:hover {
-    box-shadow: 0px 6px 10px 3px rgb(102, 100, 100);
-    background-color:#C4C2BE;
-    height: 19rem;
-    width: 34rem;
-}
-.artesanal > .modelos > div > table > tbody > tr > td > figure > #Kerambit2 {
-    height: 5rem;
-    width: 9rem;;
-    border: 0.3rem solid rgb(131, 124, 124);
-    border-radius: 1rem;
-    object-fit: cover;
-    box-shadow: 2rem 2rem 10rem rgb(8, 8, 8);
-    transition: 3s;
-}
-.artesanal > .modelos > div > table > tbody > tr > td > figure > #Kerambit2:hover {
-    box-shadow: 0px 6px 10px 3px rgb(102, 100, 100);
-    background-color:#C4C2BE;
-    height: 19rem;
-    width: 34rem;
-}
-.artesanal > .modelos > div > table > tbody > tr > td > figure > #Gut-Knife {
-    height: 5rem;
-    width: 9rem;
-    border: 0.3rem solid rgb(131, 124, 124);
-    border-radius: 1rem;
-    box-shadow: 2rem 2rem 10rem black;
-    object-fit: cover;
-    box-shadow: 2rem 2rem 10rem rgb(8, 8, 8);
-    transition: 3s;
-}
-.artesanal > .modelos > div > table > tbody > tr > td > figure > #Gut-Knife:hover {
-    box-shadow: 0px 6px 10px 3px rgb(102, 100, 100);
-    background-color:#C4C2BE;
-    height: 19rem;
-    width: 34rem;
-}
-.artesanal > .modelos > div > table > tbody > tr > td > figure > #Daga {
-    height: 5rem;
-    width: 9rem;
-    border: 0.3rem solid rgb(131, 124, 124);
-    border-radius: 1rem;
-    box-shadow: 2rem 2rem 10rem black;
-    object-fit: cover;
-    box-shadow: 2rem 2rem 10rem rgb(8, 8, 8);
-    transition: 3s;
-}
-.artesanal > .modelos > div > table > tbody > tr > td > figure > #Daga:hover {
-    box-shadow: 0px 6px 10px 3px rgb(102, 100, 100);
-    background-color:#C4C2BE;
-    height: 19rem;
-    width: 34rem;
-}
-.artesanal > .modelos > div > table > tbody > tr > td > figure > #Tanto {
-    height: 5rem;
-    width: 9rem;
-    border: 0.3rem solid rgb(131, 124, 124);
-    border-radius: 1rem;
-    box-shadow: 2rem 2rem 10rem black;
-    object-fit: cover;
-    box-shadow: 2rem 2rem 10rem rgb(8, 8, 8);
-    transition: 3s;
-}
-.artesanal > .modelos > div > table > tbody > tr > td > figure > #Tanto:hover {
-    box-shadow: 0px 6px 10px 3px rgb(102, 100, 100);
-    background-color:#C4C2BE;
-    height: 19rem;
-    width: 34rem;
-}
-.artesanal > .modelos > div > table > tbody > tr > td > figure > #Estilete {
-    height: 5rem;
-    width: 9rem;
-    border: 0.3rem solid rgb(131, 124, 124);
-    border-radius: 1rem;
-    box-shadow: 2rem 2rem 10rem black;
-    object-fit: cover;
-    box-shadow: 2rem 2rem 10rem rgb(8, 8, 8);
-    transition: 3s;
-}
-.artesanal > .modelos > div > table > tbody > tr > td > figure > #Estilete:hover {
-    box-shadow: 0px 6px 10px 3px rgb(102, 100, 100);
-    background-color:#C4C2BE;
-    height: 19rem;
-    width: 34rem;
-}
-figure > figcaption {
-    color: #BE9561;
-}
+
 /*****Responsive*****/
 @media screen and (max-width: 480px) { 
     .artesanal > .modelos > div > table > tbody > tr > td > figure > #Estilete:hover {
