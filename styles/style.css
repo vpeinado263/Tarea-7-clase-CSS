@@ -1,16 +1,13 @@
 /**************Tipos de Fuentes************/
 @font-face {
     font-family: "Skyrim";
-    src: url(../Fonts/DarkXShadowSkyrim.ttf);
+    src: url(/font/Balgruf-31cd.woff2);
 }
 @font-face {
     font-family: "Skyrim1";
-    src: url(../Fonts/Balgruf-31cd.woff2);
+    src: url(/font/DarkXShadowSkyrim.ttf);
 }
-@font-face {
-    font-family: "poirent";
-    src: url(../Fonts/PoiretOne-Regular.ttf);
-}
+
 
 /*********Propiedades Personalizadas*******/
 :root {
