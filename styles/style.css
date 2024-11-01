@@ -7,8 +7,6 @@
     font-family: "Skyrim1";
     src: url(/font/DarkXShadowSkyrim.ttf);
 }
-
-
 /*********Propiedades Personalizadas*******/
 :root {
     --first-color: rgb(5, 5, 5);
@@ -19,14 +17,14 @@
     --second-font:"Skyrim1";
 }
 
-/*****Reset*****/
+/******************Reset*******************/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 html {
-    font-size: 16px;
+    font-size: 19px;
 }
 body { 
     font-family: var(--first-font);
@@ -35,91 +33,39 @@ body {
 } 
 a {
     text-decoration: none;
+    align-items: none;
     color: var(--first-alpha-color); 
+    transition: 2s;
+}
+a:hover {
+    color: var(--winte-color);
 }
 li {
     list-style-type: none;
 }
-li > a {
-    transition: 2s;
-}
-li > a:hover {
-    color: #d5c2c2;
-}
 span {
-    color: gray;
+    color: var(--first-alpha-color);
 }
 p {
     color: var(--winte-color);
 }
 
-/*****Utilidades*****/
+/*************Utilidades Button****************/
 .card-button {
     height: 1rem;
-    width: 12rem;
+    width: 11rem;
     padding: 1rem;
-    font-size: 1em;
-    font-family: var(--second-font);
+    font-family: var(--first-font);
     line-height: 0;
     transition: 0.5s;
     display: inline-block;
     border-radius: 1rem;
     text-align: center;
-    font-weight: bold;
     text-transform: uppercase;    
 }
 .card-button:hover {
+    color: #009800;
     background-color: var(--first-color);
-}
-
-/*****Imagenes de Fondo*****/
-#fondo-principal {
-    background-image: url(../CSS/Multimedia-CSS/Imagenes/Skyrim-Fondo-Home-.jpg);
-    height: 100vh;
-    width: auto;
-    background-size: cover;
-    background-position: 80%;
-}
-#tipos {
-    background-image: url(../CSS/Multimedia-CSS/Imagenes/Melena-Gris-tipos-de-modelo.png);
-    height: 100vh;
-    background-size: cover;
-    background-position: 20%;
-}
-#cuchillodeacero {
-    background-image: url(../CSS/Multimedia-CSS/Imagenes/Cuchillo-de-Acero-al-carbon-Dagaestilete.jpg);
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: 60%;
-}
-#acercade {
-    background-image: url(../CSS/Multimedia-CSS/Imagenes/Skyrim-Fragua-Acercade.png);
-    height: 100vh;
-    width: auto;
-    background-size: cover;
-    background-position: 20%;
-}
-#afilado {
-    background-image: url(../CSS/Multimedia-CSS/Imagenes/Fragua-Carrera-Blanca.png);
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: 72%;
-}
-#restauracion  {
-    background-image: url(../CSS/Multimedia-CSS/Imagenes/restauracion-de-cuchillos.png);
-    height: 100vh;
-    width: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
-}
-#contactanos {
-    background-image: url(../CSS/Multimedia-CSS/Imagenes/Fondo-Cuenta-Gamer-Master-Kanives.jpg);
-    height: 100vh;
-    width: auto;
-    background-size: cover;
 }
 
 /***************Barra de Navegacion***************/
@@ -152,62 +98,86 @@ p {
     font-family: var(--second-font);
 }
 
-/*****Home*****/
-.titulo {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 19rem;
-    right: 15rem;;
-}
+
 
 /*****************Productos destacados******************/
-.principal {
-    height: 100vh;
+
+.container {
+    height: auto; 
     width: 100%;
-    background-image: linear-gradient(to bottom,  #919ba2dc, #000000);
+    background-image: linear-gradient(to bottom, #919ba2dc, #000000);
+    padding: 20px; 
 }
-.principal > .tarjetas {
- height: 30rem;
- display: grid;
- grid-template-columns: repeat(4, 1fr);
- position: relative;
- 
+
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
 }
-section {
-    padding: 2rem;
-}
+
+
 .card {
-    height: 150px;
-    width: 220px;
-    border: 2px solid black;
+    border: 2px solid #444; 
     border-radius: 10px;
-    background-color: var(--second-color);
-    box-shadow: 2px 2px 10px black;
+    background-color: #3b3b3b; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    overflow: hidden;
 }
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1); 
+}
+
+
 .card-image {
-    height: 5rem;
-    width: 13.5rem;
-    object-fit: cover;
-    border-radius: 0.5rem;
+    height: 150px; 
+    width: 100%; 
+    object-fit: cover; 
+    border-bottom: 2px solid #F5B241; 
 }
-.card-data{
-    list-style: none;
-    color: white;
+
+
+.card-data {
+    list-style: none; 
+    padding: 10px; 
+    color: #f5f5f5; 
 }
+
+
 .card-data-titles {
-    color: lightgrey;
+    color: #F5B241; 
+    font-weight: bold; 
 }
-.card-data-nombre {
-    color:var(--first-alpha-color);
+
+
+.card-button {
+    background-color: #F5B241; 
+    color: #000; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+    font-weight: bold; 
+    margin-top: 10px; 
+    width: 100%;
 }
+
+
 .card-button:hover {
-    background-color: white;
-    color: #F5B241;
+    background-color: #fff; 
+    color: #F5B241; 
 }
+
+
 figcaption ul li {
-   margin-bottom: 3px; 
+    margin-bottom: 5px; 
 }
+
+
 
 /*****Responsive*****/
 @media screen and (max-width: 786px) {
