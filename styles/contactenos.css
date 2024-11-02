@@ -1,14 +1,22 @@
 /*********************contactanos**************************/
-.contat {
+.contact {
     height: 100vh;
     width: 100%;
 }
 .grid-contact {
     display: grid;
     grid-template-columns: 1fr;
-    height: inherit;
+    gap: 2rem; /* Espacio entre el formulario y el mapa */
     width: inherit;
 }
+
+@media (min-width: 768px) {
+    .grid-contact {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
 /******Grid form*****/
 .form-container {
     display: flex;
@@ -16,42 +24,46 @@
     align-items: center;
     justify-content: center;
     background-color: #242F31;
+    padding: 2rem;
 }
 .form-container > h2 {
     margin: 1rem 0;
     font-size: 2.2rem;
-    color: var(--winte-color);
+    color: var(--white-color); /* Revisa que esta variable esté definida */
 }
 .form-grid-item {
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 500px; /* Ajusta el ancho máximo si prefieres limitarlo */
     background-color: #4D6663;
-}
- .form-grid-item > textarea {
-    margin-bottom: 1.5 rem;
-    border: 0;
+    padding: 1rem;
     border-radius: .5rem;
-    padding-left: 1rem;
-    font-size: 1.2rem;
 }
-.form-grid-item > textarea::placeholder {
-    color: var(--first-alpha-color);
-    font-family: var(--second-font);
+.form-grid-item > input,
+.form-grid-item > textarea {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    font-family: var(--second-font); /* Revisa que esta variable esté definida */
+    border-radius: .5rem;
+    border: none;
+    outline: none;
 }
 .form-grid-item > input {
     height: 3rem;
-    font-family: var(--second-font);
-    border-radius: 1rem;
 }
 .form-grid-item > textarea {
-    padding-top: 1rem;
     resize: none;
-    font-family: var(--second-font);
+    height: 150px;
+}
+.form-grid-item > input::placeholder,
+.form-grid-item > textarea::placeholder {
+    color: var(--first-alpha-color); /* Revisa que esta variable esté definida */
 }
 .form-grid-item > button {
     background-color: black;
-    color: var(--winte-color);
+    color: var(--white-color);
     border: 2px solid #2E302D;
     font-size: 1.5rem; 
     font-weight: bold;
@@ -59,13 +71,15 @@
     padding: .8rem 0;
     border-radius: .5rem;
     transition: 0.3s;
+    cursor: pointer;
 }
 .form-grid-item > button:hover {
     background-color: #AEDEED;
-    color: var(--first-color-);
+    color: var(--first-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 /******Grid map*****/
- .map-grid-item {
+.map-grid-item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,5 +88,5 @@
     border-radius: .5rem;
     width: 95%;
     height: 400px;
-    margin: 7.5% 0 1.2rem 0;
+    margin: 2rem 0;
 }

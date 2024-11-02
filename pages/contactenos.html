@@ -66,36 +66,40 @@
         </header> 
     </div>
 
-
-    <section class="contact">
-        <div class="grid-contact">
-            <div class=form-container>
-                <h2>
-                    Contactanos
-                </h2>
-                <h3>
-                    Deja un Mensaje
-                </h3>
-                <p>
-                    No ofrecemos afilado de cuchillos no personalizados
-                </p>
-                <form class="form-grid-item">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellido">
-                    <input type="email" placeholder="Tu Correo Electronico">
-                    <input type="tel" placeholder="Numero de Telefono">
-                    <textarea cols="30" rows="10" placeholder="Deja tu Mensaje..."></textarea>
-                    <button type="submit">
-                        Enviar
-                    </button>
-                </form>
+    <main>
+        <section class="contact">
+            <div class="grid-contact">
+                <div class="form-container">
+                    <h2>Contáctanos</h2>
+                    <h3>Deja un Mensaje</h3>
+                    <p>No ofrecemos afilado de cuchillos no personalizados</p>
+                    <form class="form-grid-item" id="contact-form">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Nombre" aria-label="Nombre" required>
+                        
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" placeholder="Apellido" aria-label="Apellido" required>
+                        
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" placeholder="Tu Correo Electrónico" aria-label="Correo Electrónico" required>
+                        
+                        <label for="telefono">Número de Teléfono</label>
+                        <input type="tel" id="telefono" placeholder="Número de Teléfono" aria-label="Número de Teléfono">
+                        
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" cols="30" rows="10" placeholder="Deja tu Mensaje..." aria-label="Deja tu Mensaje" required></textarea>
+                        
+                        <button type="submit" aria-label="Enviar mensaje">Enviar</button>
+                    </form>
+                </div>
+                <div class="map-grid-item">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65272890.25874356!2d59.47781009999998!3d3.110298100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4a2a4c84a12f%3A0x79a5842f155181e!2sSKYRIM!5e0!3m2!1ses-419!2sar!4v1688657174850!5m2!1ses-419!2sar"
+                            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Skyrim en el mapa"></iframe>
+                </div>
             </div>
-            <div class="map-grid-item">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65272890.25874356!2d59.47781009999998!3d3.110298100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4a2a4c84a12f%3A0x79a5842f155181e!2sSKYRIM!5e0!3m2!1ses-419!2sar!4v1688657174850!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
+    
     <footer> <!--Pie de Pagina con Informacion para contactar a Gamer Master Knives-->
         <div class="grid">
             <div>
