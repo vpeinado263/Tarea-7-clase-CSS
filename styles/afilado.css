@@ -1,0 +1,29 @@
+/******************Tecnica de Afilado************************/
+.tecnica > .afilado > div > h1 {
+    font-size: 2.5em;
+    text-align: center;
+    background-color: #D5C5AA;
+}
+.afilado {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.instrucciones {
+    background-color: #000000;
+    border-end-end-radius: 5rem;
+    height: 45rem;
+    width: 30rem;
+}
+.tecnica > .afilado > .instrucciones > p {
+    font-size: 1em;
+    font-family: var(--second-font);
+    color: var(--first-color);
+    text-align: center;
+    background-color: #D5C5AA;
+    border-radius: 3rem;
+}
+figcaption > span {
+    font-size: 2.5em;
+    height: 20rem;
+}
+

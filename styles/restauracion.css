@@ -1,0 +1,56 @@
+/***************Restauracion de Cuchillos********************/
+.restauracion {
+    position: relative;
+    top: 5rem;
+}
+.restauracion > div > h1 {
+    font-size: 3em;
+    color: var(--winte-color);
+    text-align: center;
+}
+.restauracion > div > p {
+    color: var(--first-color);
+    font-size: 1.5em;
+    font-family: var(--second-font);
+    text-align: center;
+}
+.desgaste > .simonaggio > h2 {
+    color: #a81212;
+}
+.desgaste > .simonaggio > p {
+    color: white;
+    font-size:1.5rem;
+}
+/*****video youtube*****/
+.desgaste {
+    height: 50%;
+    width: 100%;
+    background-color: #000000;
+}
+.desgaste > .simonaggio > #iframe {
+    height: 15rem;
+    width: 50rem;
+    border-radius: 10rem;
+    box-shadow: #272C0D 0rem 0rem 1rem 0rem; 
+}
+
+/*****Galeria de fotos*****/
+.galeria {
+    background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+  }
+.foto {
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    top: 4rem;
+  }
+#fotos {
+    width: 15rem;
+    border-radius: 1rem;
+    border-radius: 10rem;
+    box-shadow: #272C0D 0rem 0rem 7rem 2rem;
+  }
