@@ -39,4 +39,4 @@ A lo largo del proyecto, aprendí y practiqué técnicas de CSS avanzadas para m
 - **CSS Modular y Reutilizable**: Aprendí a usar variables y organizar el CSS en componentes reutilizables.
 - **Errores Comunes y Soluciones**: Gracias a los errores cometidos, ahora tengo más claro cómo estructurar proyectos de CSS de forma más efectiva.
 
-Puedes ver el proyecto en vivo aquí: [Tarea-7-css]()
+Puedes ver el proyecto en vivo aquí: [Tarea-7-css](https://tarea-7-clase-css.vercel.app/index.html)
